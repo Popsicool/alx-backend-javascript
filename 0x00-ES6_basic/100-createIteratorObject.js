@@ -1,10 +1,10 @@
-export default function createIteratorObject (report) {
-  const list = []
-  const keys = Object.keys(report.allEmployees)
-  keys.forEach((key, index) => {
+export default function createIteratorObject(report) {
+  const list = [];
+  const keys = Object.keys(report.allEmployees);
+  keys.forEach((key) => {
     for (const name of report.allEmployees[key]) {
-      list.push(name)
+      list.push(name);
     }
-  })
-  return list
+  });
+  return list;
 }
