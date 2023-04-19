@@ -8,7 +8,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
       response.map((res) => (
         {
           status: res.status,
-          value: res.status === 'fulfilled' ? res.value :   `Error: ${res.reason.message}`,
+          value: res.status === 'fulfilled' ? res.value : `Error: ${res.reason.message}`,
         }
       ));
     });
