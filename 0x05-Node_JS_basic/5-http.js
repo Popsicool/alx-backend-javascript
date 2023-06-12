@@ -31,8 +31,8 @@ const countStudents = (path) => new Promise((resolve, reject) => {
       report.push(`Number of students: ${count}`);
 
       for (const [field, group] of Object.entries(students)) {
-        report.push(`Number of students in ${field}: ${group.length}`,
-          'List:', group.map((student) => student.firstname).join(', '));
+        report.push([`Number of students in ${field}: ${group.length}`,
+          'List:', group.map((student) => student.firstname).join(', ')].join(" "));
       }
       resolve(report.join('\n'));
     }
