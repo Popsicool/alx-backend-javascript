@@ -12,7 +12,7 @@ describe('Test sum by adding numbers', function () {
     assert.equal(calculateNumber(1.2, 3.7), 5);
   });
   it('adding 1.5 and 3.7 to give 6', function () {
-    assert.equal(calculateNumber(1.5, 3.7), 6)
+    assert.equal(calculateNumber(1.5, 3.7), 6);
   });
   it('adding 0 and 0 to give 0', function () {
     assert.equal(calculateNumber(0, 0), 0);
