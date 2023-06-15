@@ -42,7 +42,7 @@ describe('test api integration', () => {
     });
   }));
 
-  it('test GET /available_payments forvalid response', () => new Promise((done) => {
+  it('test GET /available_payments for valid response', () => new Promise((done) => {
     request.get(`${url}/available_payments`, (_err, res, body) => {
       expect(res.statusCode).to.be.equal(200);
       expect(JSON.parse(body))
